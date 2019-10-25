@@ -6,20 +6,31 @@ import numpy as np
 import scipy.stats as scis
 import math
 import codecs
+import os
 u1 = codecs.open('/classes/ece2720/pe3/unicode1.dat', encoding='utf-8')
 t1 = u1.readline()
+l1 = os.stat('/classes/ece2720/pe3/unicode1.dat').st_size
+print l1
 print t1
 u2 = codecs.open('/classes/ece2720/pe3/unicode2.dat', encoding='utf-32-le')
 t2 = u2.readline()
+l2 = os.stat('/classes/ece2720/pe3/unicode2.dat').st_size
+print l2
 print t2
 u3 = codecs.open('/classes/ece2720/pe3/unicode3.dat', encoding='utf-8')
 t3 = u3.readline()
+l3 = os.stat('/classes/ece2720/pe3/unicode3.dat').st_size
+print l3
 print t3
 u4 = codecs.open('/classes/ece2720/pe3/unicode4.dat', encoding='utf-16')
 t4 = u4.readline()
+l4 = os.stat('/classes/ece2720/pe3/unicode4.dat').st_size
+print l4
 print t4
 u5 = codecs.open('/classes/ece2720/pe3/unicode5.dat', encoding='utf-32-be')
 t5 = u5.readline()
+l5 = os.stat('/classes/ece2720/pe3/unicode5.dat').st_size
+print l5
 print t5
 def synthdata():
     synth = open('/classes/ece2720/pe3/synthetic.csv', 'rb')
