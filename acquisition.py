@@ -18,7 +18,7 @@ print t3
 u4 = codecs.open('/classes/ece2720/pe3/unicode4.dat', encoding='utf-16')
 t4 = u4.readline()
 print t4
-u5 = codecs.open('/classes/ece2720/pe3/unicode5.dat', encoding='utf-8')
+u5 = codecs.open('/classes/ece2720/pe3/unicode5.dat', encoding='utf-32-be')
 t5 = u5.readline()
 print t5
 def synthdata():
